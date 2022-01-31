@@ -6,6 +6,14 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+  
+  <PropertyGroup>
+    <PackageId>CrabSeek</PackageId>
+    <Authors>Benjlet</Authors>
+    <Company>Benjlet</Company>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Benjlet/CrabSeek</RepositoryUrl>
+  </PropertyGroup>
 
   <ItemGroup>
     <InternalsVisibleTo Include="$(AssemblyName).UnitTests" />

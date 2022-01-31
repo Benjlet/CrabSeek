@@ -10,11 +10,6 @@ on:
 
 jobs:
   build:
-  
-    env:
-      BUILD_CONFIG: 'Release'
-      SOLUTION: 'CrabSeek.sln'
-
     runs-on: ubuntu-latest
 
     steps:

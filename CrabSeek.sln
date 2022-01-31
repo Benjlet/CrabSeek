@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrabSeek", "src\CrabSeek\CrabSeek.csproj", "{28201428-89F5-460F-B91E-F88B6F388375}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrabSeek.UnitTests", "src\CrabSeek.UnitTests\CrabSeek.UnitTests.csproj", "{BFF621AD-4333-4600-8A10-5529D4E8767C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A27ED70-0F80-42D0-A3F1-33F9867C48C0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28201428-89F5-460F-B91E-F88B6F388375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28201428-89F5-460F-B91E-F88B6F388375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28201428-89F5-460F-B91E-F88B6F388375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28201428-89F5-460F-B91E-F88B6F388375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF621AD-4333-4600-8A10-5529D4E8767C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF621AD-4333-4600-8A10-5529D4E8767C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF621AD-4333-4600-8A10-5529D4E8767C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF621AD-4333-4600-8A10-5529D4E8767C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C46288EA-BAD1-4CEE-B812-6240709F2480}
+	EndGlobalSection
+EndGlobal

@@ -1,25 +1,42 @@
-name: .NET
+name: Release CrabSeek
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
+  
+    env:
+      BUILD_CONFIG: 'Release'
+      SOLUTION: 'CrabSeek.sln'
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: Restore dependencies
+      run: nuget restore
+    
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
+      
     - name: Build
       run: dotnet build --no-restore
+      
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+    - name: Publish
+      if: startsWith(github.ref, 'refs/heads/release')
+      run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
